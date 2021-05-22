@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <script
+            src="https://kit.fontawesome.com/697f19f30c.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="index.js" defer></script>
+        <title>Code Name: Crypto</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <img src="logo.svg" alt="Code Name: Crypto" id="logo" />
+            </div>
+        </header>
+
+        <main>
+            <div class="title">
+                <p>Current Cryptocurrency Exchange Rate:</p>
+            </div>
+            <div class="exchange">
+                <select id="crypto" onchange="getSelectedCryptoValue();">
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="ADA">ADA</option>
+                    <option value="DOGE">DOG</option>
+                    <option value="XRP">XRP</option>
+                    <option value="DOT">DOT</option>
+                    <option value="BNB">BNB</option>
+                </select>
+                <img src="exchangeIcon.svg" alt="to" />
+                <select id="fiat" onchange="getSelectedFiatValue();">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="RUB">RUB</option>
+                </select>
+            </div>
+            <div class="result">
+                <p>
+                    <span class="text-light-blue"
+                        ><span id="result-crypto">BTC</span> =</span
+                    >
+                    <span id="value">Loading...</span>
+                    <span class="text-light-blue" id="result-fiat">USD</span>
+                </p>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p id="footer">
+                    project by
+                    <a
+                        href="https://ruslanlaptev-portfolio.netlify.app/"
+                        class="ruslan"
+                        target="_blank"
+                        >Ruslan Laptev</a
+                    ><a
+                        href="https://github.com/RuslanLaptev98"
+                        class="icons-link"
+                        target="_blank"
+                        ><i class="fab fa-github"></i></a
+                    ><a
+                        href="https://www.linkedin.com/in/ruslan-laptev-100579177/"
+                        class="icons-link"
+                        target="_blank"
+                        ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
