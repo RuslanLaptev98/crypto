@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/* Resets & Config */
+$colors: (
+    primary: #142850,
+    secondary: #fff,
+    accent: #00a8cc,
+    hover: #27496d,
+);
+$font-sizes: (
+    'main': 1.5rem,
+    'footer': 1.125rem,
+    'footer-icon': 1.25rem,
+);
+$font-weights: (
+    'light': 300,
+    'regular': 600,
+);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: map-get($font-sizes, main);
+    font-weight: map-get($font-weights, regular);
+    text-align: center;
+}
+
+.header {
+    background-color: map-get($colors, primary);
+
+    #{&}__logo {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.main {
+    margin-bottom: 1.25rem;
+
+    #{&}__title {
+        display: flex;
+        justify-content: center;
+        color: map-get($colors, primary);
+        margin-top: 1.875rem;
+    }
+    #{&}__exchange {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    #{&}__exchange select {
+        margin-left: 1.875rem;
+        margin-right: 1.875rem;
+        padding: 0.75rem 1.75rem;
+        background: map-get($colors, primary);
+        box-shadow: 0px 4px 4px rgba(20, 40, 80, 0.25);
+        border-radius: 0.625rem;
+        color: map-get($colors, secondary);
+        appearance: none;
+        border: 0;
+        font-size: map-get($font-sizes, main);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: map-get($font-weights, regular);
+        text-align: center;
+    }
+    #{&}__exchange select:hover {
+        background: map-get($colors, hover);
+        box-shadow: 0px 4px 4px rgba(39, 73, 109, 0.25);
+    }
+    #{&}__result {
+        display: flex;
+        justify-content: center;
+        background: map-get($colors, primary);
+        color: map-get($colors, secondary);
+        margin: auto;
+        margin-top: 1.875rem;
+        width: 70%;
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
+        border-radius: 1.5rem;
+    }
+    #{&}__text-accent {
+        color: map-get($colors, accent);
+    }
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background: map-get($colors, primary);
+    color: map-get($colors, secondary);
+    margin-top: auto;
+
+    #{&}__paragraph {
+        display: block;
+        padding-right: 1.875rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        text-align: right;
+        font-family: 'Oswald', sans-serif;
+        font-weight: map-get($font-weights, light);
+        font-size: map-get($font-sizes, footer);
+    }
+    #{&}__link {
+        text-decoration: none;
+        color: map-get($colors, accent);
+        font-family: 'Oswald', sans-serif;
+        font-weight: map-get($font-weights, light);
+        font-size: map-get($font-sizes, footer);
+    }
+    #{&}__icon {
+        margin-left: 0.5rem;
+        color: map-get($colors, secondary);
+        font-size: map-get($font-sizes, footer-icon);
+    }
+}

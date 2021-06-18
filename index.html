@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Metadata -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+
+        <!-- Scripts & fontawesome -->
         <script
             src="https://kit.fontawesome.com/697f19f30c.js"
             crossorigin="anonymous"
         ></script>
         <script src="index.js" defer></script>
+
+        <!-- Page title -->
         <title>Code Name: Crypto</title>
     </head>
+
     <body>
-        <header>
-            <div class="header">
-                <img src="logo.svg" alt="Code Name: Crypto" id="logo" />
-            </div>
+        <!-- Header -->
+        <header class="header">
+            <img
+                src="./assets/logo.svg"
+                alt="Code Name: Crypto"
+                class="header__logo"
+            />
         </header>
 
-        <main>
-            <div class="title">
+        <!-- Main -->
+        <main class="main">
+            <div class="main__title">
                 <p>Current Cryptocurrency Exchange Rate:</p>
             </div>
-            <div class="exchange">
+            <div class="main__exchange">
                 <select id="crypto" onchange="getSelectedCryptoValue();">
                     <option value="BTC">BTC</option>
                     <option value="ETH">ETH</option>
@@ -33,45 +43,45 @@
                     <option value="DOT">DOT</option>
                     <option value="BNB">BNB</option>
                 </select>
-                <img src="exchangeIcon.svg" alt="to" />
+                <img src="./assets/exchangeIcon.svg" alt="to" />
                 <select id="fiat" onchange="getSelectedFiatValue();">
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
                     <option value="RUB">RUB</option>
                 </select>
             </div>
-            <div class="result">
+            <div class="main__result">
                 <p>
-                    <span class="text-light-blue"
+                    <span class="main__text-accent"
                         ><span id="result-crypto">BTC</span> =</span
                     >
                     <span id="value">Loading...</span>
-                    <span class="text-light-blue" id="result-fiat">USD</span>
+                    <span class="main__text-accent" id="result-fiat">USD</span>
                 </p>
             </div>
         </main>
-        <footer>
-            <div class="footer">
-                <p id="footer">
-                    project by
-                    <a
-                        href="https://ruslanlaptev-portfolio.netlify.app/"
-                        class="ruslan"
-                        target="_blank"
-                        >Ruslan Laptev</a
-                    ><a
-                        href="https://github.com/RuslanLaptev98"
-                        class="icons-link"
-                        target="_blank"
-                        ><i class="fab fa-github"></i></a
-                    ><a
-                        href="https://www.linkedin.com/in/ruslan-laptev-100579177/"
-                        class="icons-link"
-                        target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                </p>
-            </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer__paragraph">
+                project by
+                <a
+                    href="https://ruslanlaptev-portfolio.netlify.app/"
+                    class="footer__link"
+                    target="_blank"
+                    >Ruslan Laptev</a
+                ><a
+                    href="https://github.com/RuslanLaptev98"
+                    class="footer__link"
+                    target="_blank"
+                    ><i class="fab fa-github footer__icon"></i></a
+                ><a
+                    href="https://www.linkedin.com/in/ruslan-laptev-100579177/"
+                    class="footer__link"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in footer__icon"></i
+                ></a>
+            </p>
         </footer>
     </body>
 </html>

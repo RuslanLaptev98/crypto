@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+/* Resets & Config */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header {
+  background-color: #142850;
+}
+
+.header .header__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.main {
+  margin-bottom: 1.25rem;
+}
+
+.main .main__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #142850;
+  margin-top: 1.875rem;
+}
+
+.main .main__exchange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.main .main__exchange select {
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+  padding: 0.75rem 1.75rem;
+  background: #142850;
+  -webkit-box-shadow: 0px 4px 4px rgba(20, 40, 80, 0.25);
+          box-shadow: 0px 4px 4px rgba(20, 40, 80, 0.25);
+  border-radius: 0.625rem;
+  color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.main .main__exchange select:hover {
+  background: #27496d;
+  -webkit-box-shadow: 0px 4px 4px rgba(39, 73, 109, 0.25);
+          box-shadow: 0px 4px 4px rgba(39, 73, 109, 0.25);
+}
+
+.main .main__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #142850;
+  color: #fff;
+  margin: auto;
+  margin-top: 1.875rem;
+  width: 70%;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  border-radius: 1.5rem;
+}
+
+.main .main__text-accent {
+  color: #00a8cc;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #142850;
+  color: #fff;
+  margin-top: auto;
+}
+
+.footer .footer__paragraph {
+  display: block;
+  padding-right: 1.875rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: right;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.footer .footer__link {
+  text-decoration: none;
+  color: #00a8cc;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.footer .footer__icon {
+  margin-left: 0.5rem;
+  color: #fff;
+  font-size: 1.25rem;
+}
+/*# sourceMappingURL=styles.css.map */
