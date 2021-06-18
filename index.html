@@ -30,11 +30,11 @@
 
         <!-- Main -->
         <main class="main">
-            <div class="main__title">
-                <p>Current Cryptocurrency Exchange Rate:</p>
-            </div>
+            <!-- Main Title -->
+            <p class="main__title">Current Cryptocurrency Exchange Rate:</p>
+            <!-- Main Exchange -->
             <div class="main__exchange">
-                <select id="crypto" onchange="getSelectedCryptoValue();">
+                <select id="select-crypto" onchange="getSelectedCryptoValue();">
                     <option value="BTC">BTC</option>
                     <option value="ETH">ETH</option>
                     <option value="ADA">ADA</option>
@@ -43,19 +43,20 @@
                     <option value="DOT">DOT</option>
                     <option value="BNB">BNB</option>
                 </select>
-                <img src="./assets/exchangeIcon.svg" alt="to" />
-                <select id="fiat" onchange="getSelectedFiatValue();">
+                <img src="./assets/exchange-icon.svg" alt="to" />
+                <select id="select-fiat" onchange="getSelectedFiatValue();">
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
                     <option value="RUB">RUB</option>
                 </select>
             </div>
+            <!-- Main Result -->
             <div class="main__result">
                 <p>
                     <span class="main__text-accent"
                         ><span id="result-crypto">BTC</span> =</span
                     >
-                    <span id="value">Loading...</span>
+                    <span id="result-value">Loading...</span>
                     <span class="main__text-accent" id="result-fiat">USD</span>
                 </p>
             </div>
